@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, aqua, lightblue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+}
+
+.dropdown {
+    position: relative;
+}
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #28a9ad;
+    min-width: 100px;
+    z-index: 1;
+    border: 1px solid #ddd;
+}
+ 
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: box-shadow 0.3s;
+}
+ 
+.dropdown-content a:hover {
+    box-shadow: 0 0 10px white;
+}
+ 
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bug-report {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bug-report h2 {
+    text-align: center;
+}
+
+.bug-report label {
+    font-weight: bold;
+}
+
+.bug-report .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increased space between input groups */
+}
+
+.bug-report .input-group label {
+    flex: 1;
+}
+
+.bug-report .input-group input {
+    display: flex;
+    padding: 20px;
+    margin-right: 20px; /*Increased space between label and input */
+    /*margin-bottom: 20px;
+    padding: 10px 0; */
+}
+
+.bug-report textarea,
+.bug-report select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px; /* Increased space between inputs */
+    margin-top: auto;
+}
+
+.bug-report input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bug-report input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Center the Email input */
+.bug-report .input-group:nth-child(2) {
+    justify-content: center;
+}
+
+/* Move Name of Game input down */
+/*#game {
+    margin-top: 1em;
+}*/
+.bug-report .input-group.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increased space between input groups */
+}
+
+.bug-report .input-group.checkbox label {
+    flex: 1;
+}
+
+.bug-report .input-group.checkbox span.attach-here {
+    margin-left: 10px;
+    font-size: 12px;
+    color: white;
+}
